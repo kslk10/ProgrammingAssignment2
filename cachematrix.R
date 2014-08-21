@@ -1,4 +1,4 @@
-## Put comments here that give an overall description of what your
+## This script give the cached inverse of matrix
 ## functions do
 
 ## Write a short comment describing this function

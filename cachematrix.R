@@ -1,7 +1,8 @@
-## This script give the cached inverse of matrix
-## functions do
+## Inversing of a matrix is a costly process. 
+## The functions written here will cache this process in case this process in run continuiously in loop and matrix does not change.
+## There in helps performance.
 
-## Write a short comment describing this function
+## Creates a specialized matrix as a list of get(),set(),getinverse(),setinverse()
 
 makeCacheMatrix <- function(x = matrix()) {
 	i <- NULL
@@ -19,11 +20,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Calculates the inverse of a matrix when it is called first time, next time onwards it returns the cached inverse matrix if the matrix as not changed.
 
 
 cacheSolve <- function(x, ...) {
-## Return a matrix that is the inverse of 'x'
+
 	i <- x$getinverse()
         if(!is.null(i)) {
 		message("getting cached data")
